@@ -1,20 +1,23 @@
 # Introduction
 * A **Test Management Solution** using Markdown files and GitHub.
 * You could change test specifications or upload test results anywhere with a browser. Then reports will be generated automatically in `Reports` folder using GitHub Actions.
+* Step-by-step instructions can be found in the below video
 
 
-https://user-images.githubusercontent.com/25169430/131096454-4d98f2db-85d7-4955-9305-6098bbc2e05a.mp4
+  https://user-images.githubusercontent.com/25169430/131285088-3412bc3c-2afb-4668-86a2-09d2693a1a1a.mp4
 
 
 # Step by step
 ## 1. Clone template repository and enable GitHub Action
-* User must have a GitHub account
-1. Login your [GitHub](https://github.com/login) account
-2. Open https://github.com/lgjp-open-source/TestManagementSolution on browser and click `Fork` button on the top right
-3. Click `Actions` tab, then click `I understand my workflows, go ahead and enable them` button
+* Using this template (including pre-configured GitHub Actions, report library and Test Specification template), it is easy to create a minimal Test Management solution
+* User must have a GitHub account  
+  
+1.1. Login your [GitHub](https://github.com/login) account  
+1.2. Open https://github.com/lgjp-open-source/TestManagementSolution in a new tab and click `Fork` button on the top right of opened tab  
+1.3. Click `Actions` tab, then click `I understand my workflows, go ahead and enable them` button
 
-## 2. Create and update Test Specification Markdown files
-1. Create a new Test Specification Markdown Markdown file
+## 2. Create and update Test Specification Markdown files (customize a Markdown file)
+2.1. Create a new Test Specification Markdown file  
  * Click `TestManagementSolution/Tests/` folder
  * Click `Template.MD` file, then open edit mode by click Pen symbol on the right. Select all file content and copy it  
  * Go back to `TestManagementSolution/Tests/` folder
@@ -23,10 +26,10 @@ https://user-images.githubusercontent.com/25169430/131096454-4d98f2db-85d7-4955-
  * Paste the content copied in the above step to this new file
  * Click `Commit new file` button to save this file
  * Your Markdown file look like
- ![Markdown](https://user-images.githubusercontent.com/25169430/131081891-4563eb4f-fc63-4819-a3a7-063db19fb6c6.png)
+ ![Markdown](https://user-images.githubusercontent.com/25169430/131081891-4563eb4f-fc63-4819-a3a7-063db19fb6c6.png)  
 
-2. Fill test case design
-* Open your Markdown file (create in step 2.1 above) in edit mode
+2.2. Fill test case design
+* Open your Markdown file (create in step 2.1 above) in edit mode by click Pen symbol on the right
 * Enter test design information (Blue fields in the above picture)
   * Test Case information:
     * Enter your test case id to the unordered list below "## Test Case ID" header - replace "N/A" value
@@ -41,9 +44,9 @@ https://user-images.githubusercontent.com/25169430/131096454-4d98f2db-85d7-4955-
     * Enter your test step data to the unordered list below "* Test Data" unordered list - enter the meaningful informative(for example: username=test, password=123456), otherwise leave it as N/A
     * Enter your test step expected results to the unordered list below "* Expected Results" unordered list - enter the meaningful informative(for example: login successful), otherwise leave it as N/A
   * If you have more than one step, copy "Step 1" ordered list and enter test step details, test step data and test step expected results again
-* Click `Commit changes` button to save your test design
+* Click `Commit changes` button to save your test design  
 
-3. Fill test results
+2.3. Fill test results
 * Assume that you already run your test and have result
 * Click your Markdown file in step 2.2 above and open it in edit mode
 * Enter test results information (Yellow fields in the above picture)
