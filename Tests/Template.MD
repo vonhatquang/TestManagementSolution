@@ -25,6 +25,6 @@
 	* Expected Results
 		* N/A
 	* Actual Results
-		* Not executed
+		* N/A
 	* Pass / Fail / Not executed / Suspended
 		* Not executed
