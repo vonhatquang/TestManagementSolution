@@ -32,17 +32,21 @@ jobs:
           distribution: 'adopt' # See 'Supported distributions' for available options
           java-version: '11'
           
+       # Delete files in Reports folder
+      - name: Remove File
+        run: rm -rf $GITHUB_WORKSPACE/Reports/*
+      
        # Runs a total analysic command
       - name: Run total analysic
-        run: java -jar $GITHUB_WORKSPACE/Reports/em-testcasemng-tool-1.0.0.jar -a -h -f $GITHUB_WORKSPACE/Tests -o $GITHUB_WORKSPACE/Reports
+        run: java -jar $GITHUB_WORKSPACE/Library/em-testcasemng-tool-1.0.0.jar -a -f $GITHUB_WORKSPACE/Tests -o $GITHUB_WORKSPACE/Reports
         
-       # Runs a total analysic command
+       # Runs a historical analysic command
       - name: Run historical analysic
-        run: java -jar $GITHUB_WORKSPACE/Reports/em-testcasemng-tool-1.0.0.jar -a -f $GITHUB_WORKSPACE/Tests -o $GITHUB_WORKSPACE/Reports
+        run: java -jar $GITHUB_WORKSPACE/Library/em-testcasemng-tool-1.0.0.jar -a -h -f $GITHUB_WORKSPACE/Tests -o $GITHUB_WORKSPACE/Reports
         
        # Convert Markdown to Excel
       - name: Convert Markdown to Excel
-        run: java -jar $GITHUB_WORKSPACE/Reports/em-testcasemng-tool-1.0.0.jar -c -m2e -f $GITHUB_WORKSPACE/Tests -o $GITHUB_WORKSPACE/Reports
+        run: java -jar $GITHUB_WORKSPACE/Library/em-testcasemng-tool-1.0.0.jar -c -m2e -f $GITHUB_WORKSPACE/Tests -o $GITHUB_WORKSPACE/Reports
        
       # Commit changes s
       - name: Commit & Push changes
