@@ -51,9 +51,9 @@
 * Click your Markdown file in step 2.2 above and open it in edit mode
 * Enter test results information (Yellow fields in the above picture)
   * Enter your test date to the unordered list below "## Date Tested (mm/dd/yy hh:mm:ss)" header - replace "N/A" value, for example: 8/18/21 18:20:59
-  * Enter your test results to the unordered list below "## Test Case Results (Pass / Fail / Not executed / Suspended))" header - replace "N/A" value with Pass, Fail, Not executed, or Suspended
+  * Enter your test results to the unordered list below "## Test Case Results (Pass / Fail / Not executed / Suspended))" header - replace "Not executed" value with Pass, Fail, Not executed, or Suspended
   * Enter your test step actual result to the unordered list below "* Actual Results" unordered list - enter the meaningful informative (for example:login successful), otherwise leave it as N/A
-  * Enter your test step result to the unordered list below "* Pass / Fail / Not executed / Suspended" unordered list - replace "N/A" value with Pass, Fail, Not executed, or Suspended
+  * Enter your test step result to the unordered list below "* Pass / Fail / Not executed / Suspended" unordered list - replace "Not executed" value with Pass, Fail, Not executed, or Suspended
 
 * Click `Commit changes` button to save your test design
 
