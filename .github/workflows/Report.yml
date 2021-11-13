@@ -36,17 +36,9 @@ jobs:
       - name: Remove File
         run: rm -rf $GITHUB_WORKSPACE/Reports/*
       
-       # Runs a total analysic command
-      - name: Run total analysic
-        run: java -jar $GITHUB_WORKSPACE/Library/em-testcasemng-tool-1.0.0.jar -a -f $GITHUB_WORKSPACE/Tests -o $GITHUB_WORKSPACE/Reports
-        
-       # Runs a historical analysic command
-      - name: Run historical analysic
-        run: java -jar $GITHUB_WORKSPACE/Library/em-testcasemng-tool-1.0.0.jar -a -h -f $GITHUB_WORKSPACE/Tests -o $GITHUB_WORKSPACE/Reports
-        
-       # Convert Markdown to Excel
-      - name: Convert Markdown to Excel
-        run: java -jar $GITHUB_WORKSPACE/Library/em-testcasemng-tool-1.0.0.jar -c -m2e -f $GITHUB_WORKSPACE/Tests -o $GITHUB_WORKSPACE/Reports
+       # Runs a analysic command with config file
+      - name: Run analysic
+        run: java -jar $GITHUB_WORKSPACE/Library/em-testcasemng-tool-1.0.0.jar -config -f $GITHUB_WORKSPACE/Library/config.properties
        
       # Commit changes s
       - name: Commit & Push changes
