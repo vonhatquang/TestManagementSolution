@@ -6,7 +6,6 @@
 * sampleUnitTest
 ## Test Case Description
 * Run Automation
-* Run Manual
 ## Pre-conditions
 * N/A
 ## Post-conditions
